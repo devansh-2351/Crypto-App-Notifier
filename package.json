@@ -1,0 +1,27 @@
+{
+  "name": "crypto-app-electron",
+  "productName": "Crypto App Notifier",
+  "version": "1.0.0",
+  "description": "It grabs BTC price every 30s and also gives the functionality of adding a desktop notification when the Bitcoin hits a certain price",
+  "main": "main.js",
+  "icon": "./assets/icons/btc.png",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . crypto-app-electron --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Crypto App Notifier\"",
+    "package-linux": "electron-packager . crypto-app-electron --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "keywords": [
+    "electron",
+    "bitcoin",
+    "notification"
+  ],
+  "devDependencies": {
+    "electron": "2.0.9",
+    "electron-packager": "^12.1.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "node-notifier": "^5.2.1"
+  }
+}
