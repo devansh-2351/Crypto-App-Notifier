@@ -44,5 +44,3 @@ Then, you can run `npm run package-mac`, `npm run package-win` or `npm run packa
 - [Node-Notifier](https://github.com/mikaelbr/node-notifier): A Node.js module for sending notifications on native Mac, Windows and Linux (or Growl as fallback)
 - [Electron Packager](https://github.com/electron-userland/electron-packager): Customize and package your Electron app with OS-specific bundles (.app, .exe, etc.) via JS or CLI 
 
-## License
-This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/mit-license.html) © Pablo Satler 2018
